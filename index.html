@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1> <!-- Page title -->
+    <p id="description">Thank you for taking the time to help us improve the platform</p> <!-- Short explanation -->
+
+    <form id="survey-form">
+        <fieldset>
+        <label id="name-label" for="name">Name: </label>
+        <input id="name" name="name" type="text" placeholder="Enter your name" required>
+
+        <label id="email-label" for="email">Email: </label>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required>
+
+        <label id="number-label" for="number">Age: </label>
+        <input id="number" name="age" type="number" min="1" max="120" placeholder="Enter your age">
+        </fieldset>
+        <fieldset>
+        <label for="dropdown">Which option best describes your current role? </label>
+        <select id="dropdown" name="role">
+            <option value="">(select one)</option>
+            <option value="student">Student</option>
+            <option value="full-time-job">Full Time Job</option>
+            <option value="full-time-learner">Full Time Learner</option>
+            <option value="prefer-not-to-say">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+        </fieldset>
+        <fieldset>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label><input type="radio" name="recommend" value="definitely" checked> Definitely</label>
+        <label><input type="radio" name="recommend" value="maybe"> Maybe</label>
+        <label><input type="radio" name="recommend" value="not-sure"> Not sure</label>
+        </fieldset>
+        <fieldset>
+        <p>What do you like most about freeCodeCamp? (Check all that apply)</p>
+        <label><input type="checkbox" name="like" value="challenges"> Challenges</label>
+        <label><input type="checkbox" name="like" value="projects"> Projects</label>
+        <label><input type="checkbox" name="like" value="community"> Community</label>
+        <label><input type="checkbox" name="like" value="open-source"> Open Source</label>
+        </fieldset>
+        <fieldset>
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here..."></textarea>
+        </fieldset>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+</html>
